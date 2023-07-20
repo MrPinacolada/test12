@@ -1,14 +1,14 @@
 export default {
-  "_index.3346c753.js": {
+  "_index.395d0b37.js": {
     "resourceType": "script",
     "module": true,
-    "file": "index.3346c753.js",
+    "file": "index.395d0b37.js",
     "isDynamicEntry": true
   },
-  "_nuxt-link.a0ce9d34.js": {
+  "_nuxt-link.63ce98a7.js": {
     "resourceType": "script",
     "module": true,
-    "file": "nuxt-link.a0ce9d34.js",
+    "file": "nuxt-link.63ce98a7.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -22,9 +22,9 @@ export default {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-404.463576eb.js",
+    "file": "error-404.84ea5319.js",
     "imports": [
-      "_nuxt-link.a0ce9d34.js",
+      "_nuxt-link.63ce98a7.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -43,7 +43,7 @@ export default {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-500.2caaf531.js",
+    "file": "error-500.ec328726.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -61,7 +61,7 @@ export default {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.95550443.js",
+    "file": "entry.f3a16584.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js"
   },
@@ -74,7 +74,7 @@ export default {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "comment.2ed0bbe9.js",
+    "file": "comment.47b209e5.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -95,12 +95,12 @@ export default {
     "module": true,
     "css": [],
     "dynamicImports": [
-      "_index.3346c753.js"
+      "_index.395d0b37.js"
     ],
-    "file": "index.61aa70e5.js",
+    "file": "index.fc1c80e5.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_nuxt-link.a0ce9d34.js"
+      "_nuxt-link.63ce98a7.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"

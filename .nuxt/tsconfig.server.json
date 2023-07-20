@@ -1,0 +1,61 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "paths": {
+      "#imports": [
+        "C:/Users/Bob/Desktop/testing/test12/.nuxt/types/nitro-imports"
+      ],
+      "#paths": [
+        "C:/Users/Bob/Desktop/testing/test12/node_modules/nuxt/dist/core/runtime/nitro/paths"
+      ],
+      "~": [
+        "C:/Users/Bob/Desktop/testing/test12"
+      ],
+      "~/*": [
+        "C:/Users/Bob/Desktop/testing/test12/*"
+      ],
+      "@": [
+        "C:/Users/Bob/Desktop/testing/test12"
+      ],
+      "@/*": [
+        "C:/Users/Bob/Desktop/testing/test12/*"
+      ],
+      "~~": [
+        "C:/Users/Bob/Desktop/testing/test12"
+      ],
+      "~~/*": [
+        "C:/Users/Bob/Desktop/testing/test12/*"
+      ],
+      "@@": [
+        "C:/Users/Bob/Desktop/testing/test12"
+      ],
+      "@@/*": [
+        "C:/Users/Bob/Desktop/testing/test12/*"
+      ],
+      "assets": [
+        "C:/Users/Bob/Desktop/testing/test12/assets"
+      ],
+      "public": [
+        "C:/Users/Bob/Desktop/testing/test12/public"
+      ],
+      "public/*": [
+        "C:/Users/Bob/Desktop/testing/test12/public/*"
+      ]
+    }
+  },
+  "include": [
+    "C:/Users/Bob/Desktop/testing/test12/.nuxt/types/nitro-nuxt.d.ts",
+    "./types/nitro.d.ts",
+    "../**/*",
+    "../server/**/*"
+  ]
+}

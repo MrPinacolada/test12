@@ -21,9 +21,35 @@
           class="table-row-link"
         >
           <tr>
-            <td>{{ comment.id }}</td>
+            <td>
+              <div
+                class="circle"
+                :class="{
+                  circle: comment.id <= 99,
+                  cloud: comment.id > 99,
+                  blue: comment.id <= 50,
+                  green: comment.id > 50 && comment.id <= 100,
+                  orange: comment.id > 100 && comment.id <= 150,
+                  red: comment.id > 150,
+                }"
+              >
+                {{ comment.id }}
+              </div>
+            </td>
             <td>{{ comment.name }}</td>
-            <td>{{ comment.email }}</td>
+            <td>
+              <div
+                class="cloud"
+                :class="{
+                  green: comment.id <= 50,
+                  blue: comment.id > 50 && comment.id <= 100,
+                  red: comment.id > 100 && comment.id <= 150,
+                  orange: comment.id > 150,
+                }"
+              >
+                {{ comment.email }}
+              </div>
+            </td>
           </tr>
         </NuxtLink>
       </tbody>
@@ -127,6 +153,7 @@ tr:hover {
   background-color: #f5f5f5;
   cursor: pointer;
 }
+
 .table-row-link {
   display: contents;
 }
@@ -158,5 +185,63 @@ tr:hover {
 a {
   text-decoration: none;
   color: inherit;
+}
+.circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.circle span {
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.cloud {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #f5f5f5;
+  color: #333;
+  border-radius: 20px;
+}
+.circle.blue {
+  background-color: #3498db;
+}
+
+.circle.green {
+  background-color: #2ecc71;
+}
+
+.circle.orange {
+  background-color: #e67e22;
+}
+
+.circle.red {
+  background-color: #e74c3c;
+}
+
+.cloud.blue {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.cloud.green {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.cloud.orange {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.cloud.red {
+  background-color: #e74c3c;
+  color: #fff;
 }
 </style>

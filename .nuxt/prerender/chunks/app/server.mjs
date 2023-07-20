@@ -318,7 +318,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/comment-cfe09038.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/comment-60acbe25.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -326,7 +326,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-e77ef28e.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-7229b8bc.mjs').then((m) => m.default || m)
   }
 ];
 const appHead = { "meta": [{ "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "charset": "utf-8" }], "link": [], "style": [], "script": [], "noscript": [] };

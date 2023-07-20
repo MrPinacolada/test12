@@ -21,12 +21,15 @@
     <button v-if="showNextSubset" class="pagination-button" @click="nextSubset">
       &raquo;
     </button>
+    <button v-if="currentPage > 1" class="pagination-button" @click="goBack">
+      Назад
+    </button>
   </div>
 </template>
 
 <script>
 export default {
-  name:'PAGINATOR',
+  name: "PAGINATOR",
   props: {
     currentPage: {
       type: Number,
@@ -41,7 +44,7 @@ export default {
       default: 5,
     },
   },
-  // пропсы прописывал как в ts, я хз так ли должно быть в js 
+  // пропсы прописывал как в ts, я хз так ли должно быть в js
   computed: {
     pages() {
       const totalPages = this.totalPages;
@@ -74,6 +77,9 @@ export default {
     nextSubset() {
       const nextSubsetPage = this.currentPage + this.perSubset;
       this.changePage(nextSubsetPage);
+    },
+    goBack() {
+      this.changePage(1);
     },
   },
 };
